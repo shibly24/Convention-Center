@@ -6,6 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Convention Center</title>
+    <style>
+        @media only screen and (max-width: 576px) {
+            .navbar-nav {
+                text-align: center;
+            }
+
+            .carousel-caption {
+                bottom: 125px;
+            }
+
+            .carousel-caption h5 {
+                font-size: 17px;
+            }
+
+            .carousel-caption a {
+                padding: 10px 15px;
+                font-size: 15px;
+            }
+
+            .carousel-caption p {
+                width: 100%;
+                line-height: 1.6;
+                font-size: 12px;
+            }
+
+            .about-text {
+                padding-top: 50px;
+            }
+
+            .card {
+                margin-bottom: 30px;
+            }
+        }
+
+
+        h1 {
+            font-family: fantasy;
+        }
+
+        h2 {
+            font-family: fantasy;
+        }
+
+        p li {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
     <!doctype html>
     <html lang="en">
 
@@ -37,86 +84,76 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: rgb(198, 252, 198);">
         <div class="container-fluid">
-            <a class="navbar-brand fs-2 fw-bold " href="#">WorldWide Convention Center</a>
-            <div class="collapse navbar-collapse pe-lg- -10" id="main-menu">
-                <ul class="navbar-nav ms-auto justify-content-between ">
-                    <li class="nav-item"><a class="nav-link active fw-bold" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold" href="#">Contacts</a></li>
-                    <li class="nav-item"><a class="nav-link fw-bold" href="#">Subscribe</a></li>
-
+            <a class="navbar-brand" href="#"><span class="text-dark" style="font-size: 30px;">WorldWide</span>Home
+                Travvels</a> <button aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent"
+                data-bs-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" style="font-weight: 700;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" style="font-weight: 700;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" style="font-weight: 700;">Ticket</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio" style="font-weight: 700;">Travel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team" style="font-weight: 700;">Subscribe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" style="font-weight: 700;">Contact</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <br>
+
     <section>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
                     aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img style="width: 1440px; height: 584px;" src="images/hostel-4.jpg" class="d-block w-100"
-                        alt="super">
-
-                    <div class="carousel-caption d-none d-md-block"
-                        style="background-color: lightcyan;border-radius: 20px; color: black;">
-                        <h1>SUPER HOME BD</h1>
-                        <p>This is actually Bachelor Hostel. Only males are allowed to stay in this hostel. We also have
-                            another hostel for girls. By this price breakfast, lunch & dinner included. </p>
-                        <p>#16 of 46 Specialty Lodging in Dhaka City
-                            Save
-                            Share
-                            House# 2/KA/10, Mymensign Road, Shahbag, Dhaka City 1000 Bangladesh</p>
+                    <img src="images/hostel-2.jpg" class="d-block w-100 " alt="..." width="1440px" height="584px">
+                    <div class="carousel-caption  d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
-
                 <div class="carousel-item">
-                    <img style="width: 1440px; height: 584px;" src="images/hostel-3.jpg" class="d-block w-100"
-                        alt="home">
-
-
-                    <div class="carousel-caption d-none d-md-block"
-                        style="background-color: lightcyan; border-radius: 20px; color: black;">
-                        <h1>SUPER HOME BD</h1>
-                        <p>This is actually Bachelor Hostel. Only males are allowed to stay in this hostel. We also have
-                            another hostel for girls. By this price breakfast, lunch & dinner included. </p>
-                        <p>#16 of 46 Specialty Lodging in Dhaka City
-                            Save
-                            Share
-                            House# 2/KA/10, Mymensign Road, Shahbag, Dhaka City 1000 Bangladesh</p>
-
+                    <img src="images/hostel-3.jpg" class="d-block w-100" alt="..." width="1440px" height="584px">
+                    <div class="carousel-caption  d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
                     </div>
                 </div>
-                <div class="carousel-item data-bs-interval=10000">
-                    <img style="width: 1440px; height: 584px;" src="images/hostel-2.jpg" class="d-block w-100" alt="bd">
-
-                    <div class="carousel-caption d-none d-md-block"
-                        style="background-color: lightcyan; border-radius: 20px; color: black;">
-                        <h1>SUPER HOME BD</h1>
-                        <p>This is actually Bachelor Hostel. Only males are allowed to stay in this hostel. We also have
-                            another hostel for girls. By this price breakfast, lunch & dinner included. </p>
-                        <p>#16 of 46 Specialty Lodging in Dhaka City
-                            Save
-                            Share
-                            House# 2/KA/10, Mymensign Road, Shahbag, Dhaka City 1000 Bangladesh</p>
+                <div class="carousel-item">
+                    <img src="images/hostel-4.jpg" class="d-block w-100" alt="..." width="1440px" height="584px">
+                    <div class="carousel-caption  d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -126,12 +163,12 @@
     <br>
     <section>
         <div class="d-flex justify-content-center">
-            <div><img style="border-radius: 20px; margin-top: 30px;" src="images/hostel3.jpg" alt="" width=" 546px"
-                    height="346px">
+            <div><img class=" col-12 col-xl-12" style="border-radius: 20px; margin-top: 30px;" src="images/hostel3.jpg"
+                    alt="" width=" 546px" height="346px">
             </div>
-            <div class="m-4">
-                <h1>Facilities</h1>
-                <p>
+            <div class="m-4 col-6  col-xl-2">
+                <h1 style="font-family: fantasy;">Facilities</h1>
+                <p class="col-sm-1 col-xl-1" style="font-family: fantasy;">
                     <li>24 Hours Security</li>
                     <li>GYM</li>
                     <li>Hair Dryer</li>
@@ -145,78 +182,90 @@
                     <li>Cleaning Service</li>
                 </p>
                 <div class="d-flex justify-content-center "
-                    style="border-radius: 20px; padding: 10px; background-color: rgba(201, 243, 192, 0.671);">
+                    style="border-radius: 20px; padding: 10px; background-color: rgba(201, 243, 192, 0.671); box-shadow: 10px 10px 5px #aaaaaa;">
                     <a class="fs-5 fw-bolder" style="text-decoration: none; " href="#">More Details....</a>
                 </div>
             </div>
         </div>
     </section>
     <br>
+
     <section>
         <div class="d-flex justify-content-center ">
-            <h1>Our Packeges</h1>
+            <h1 style=" box-shadow: 10px 10px 5px #d3f5d0;">Our Packeges</h1>
         </div>
         <br>
         <br>
         <div class="container">
-            <div class=" row " style=" grid-row-gap: 60px;">
+            <div class=" row " style=" grid-row-gap: 60px; col-sm-1 col-xl-1">
                 <div class="row gx-5">
-                    <div class="col-3 gx-5" style="padding-top: 80px;">
-                        <h2>Price: </h2>
-                        <h2>Business fair</h2>
+                    <div class="col-12 col-lg-3 gx-5" style="padding-top: 80px;">
+                        <h2>Price: $
+                            30.00
+                            USD/
+                            mo </h2>
+                        <h2>Business(SILVER)</h2>
                         <p>For most businesses event like book fair, craft fair.</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
+                        <p><i class="fas fa-check-circle"></i> Limited space access</p>
+                        <p><i class="fas fa-check-circle"></i> 5 indicators per chart</p>
+                        <p><i class="fas fa-check-circle"></i> 2 charts in one window</p>
+                        <p><i class="fas fa-check-circle"></i> 20 server-side alerts</p>
+                        <p><i class="fas fa-check-circle"></i> Volume profile indicators</p>
                         <div class="d-flex justify-content-center "
-                            style="border-radius: 20px; padding: 10px; background-color: antiquewhite;">
+                            style="border-radius: 20px; padding: 10px; background-color: antiquewhite; box-shadow: 10px 10px 5px #aaaaaa;">
                             <a class="fs-5 fw-bolder" style="text-decoration: none; " href="#">Choosen Plan</a>
                         </div>
                     </div>
-                    <div class="col-3 gx-5" style="padding-top: 80px;">
-                        <h2>Price: </h2>
-                        <h2>Business fair</h2>
+                    <div class="col-12 col-lg-3 gx-5" style="padding-top: 80px;">
+                        <h2>Price: $
+                            17.95
+                            USD/
+                            mo </h2>
+                        <h2>Pro(GOLD)</h2>
                         <p>For most businesses event like book fair, craft fair.</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
+                        <p><i class="fas fa-check-circle"></i> Custom time intervals</p>
+                        <p><i class="fas fa-check-circle"></i> Multiple enhanced watchlists</p>
+                        <p><i class="fas fa-check-circle"></i> Bar replay on intraday bars</p>
+                        <p><i class="fas fa-check-circle"></i> Multi-monitor support in</p>
+                        <p><i class="fas fa-check-circle"></i> Desktop app</p>
                         <div class="d-flex justify-content-center "
-                            style="border-radius: 20px; padding: 10px; background-color: antiquewhite;">
+                            style="border-radius: 20px; padding: 10px; background-color: antiquewhite; box-shadow: 10px 10px 5px #aaaaaa;">
                             <a class="fs-5 fw-bolder" style="text-decoration: none; " href="#">Choosen Plan</a>
                         </div>
                     </div>
-                    <div class="col-3 bg-primary gx-5" style="border-radius: 20px; position: relative;">
+                    <div class="col-12 col-lg-3 bg-primary gy-5 "
+                        style="border-radius: 20px; position: relative; color: white;  box-shadow: 10px 10px 5px #aaaaaa;">
 
                         <span class="position-absolute top-10 start-100 translate-middle badge rounded-pill bg-danger">
                             <span class="visually">HOT</span></span>
                         <h3 class="invisible">Golden Plan</h3>
-                        <h2>Price: </h2>
-                        <h2>Business fair</h2>
+                        <h2>Price: $
+                            10.50 </h2>
+                        <h2>Pre.(DIAMOND)</h2>
                         <p>For most businesses event like book fair, craft fair.</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
+                        <p><i class="fas fa-check-circle"></i> 10 indicators per chart</p>
+                        <p><i class="fas fa-check-circle"></i> 4 charts in one layout</p>
+                        <p><i class="fas fa-check-circle"></i> 100 server-side alerts</p>
+                        <p><i class="fas fa-check-circle"></i> 10 saved chart layouts</p>
+                        <p><i class="fas fa-check-circle"></i> Intraday exotic charts</p>
                         <div class="d-flex justify-content-center bg-white" style="border-radius: 20px; padding: 10px;">
                             <a class="fs-5 fw-bolder" style="text-decoration: none;" href="#">Choosen Plan</a>
                         </div>
                     </div>
-                    <div class="col-3 gx-5" style="padding-top: 80px;">
-                        <h2>Price: </h2>
-                        <h2>Business fair</h2>
+                    <div class="col-12 col-lg-3 gx-5 " style="padding-top: 80px;">
+                        <h2>Price: $
+                            30.00
+                            USD/
+                            mo</h2>
+                        <h2>Pro+(BRONZE)</h2>
                         <p>For most businesses event like book fair, craft fair.</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
-                        <p><i class="fas fa-check-circle"></i> limited space access</p>
+                        <p><i class="fas fa-check-circle"></i> Charts based on custom</p>
+                        <p><i class="fas fa-check-circle"></i> Chart data export</p>
+                        <p><i class="fas fa-check-circle"></i> Indicators on indicators</p>
+                        <p><i class="fas fa-check-circle"></i> 25 indicators per chart</p>
+                        <p><i class="fas fa-check-circle"></i> 8 charts in one layout</p>
                         <div class="d-flex justify-content-center "
-                            style="border-radius: 20px; padding: 10px; background-color: antiquewhite;">
+                            style="border-radius: 20px; padding: 10px; background-color: antiquewhite; box-shadow: 10px 10px 5px #aaaaaa;">
                             <a class="fs-5 fw-bolder" style="text-decoration: none; " href="#">Choosen Plan</a>
                         </div>
                     </div>
@@ -224,18 +273,19 @@
             </div>
         </div>
     </section>
-
+    <br>
     <!-- Freequently Ask Question -->
 
-    <section class="container">
-        <h1 style="text-align: center; margin: 50px 0 !important;">
+    <section class="container" style=" ">
+        <h1 style="text-align: center; margin: 50px 0 !important; margin-top: 50px; box-shadow: 1px 10px 5px grey; ">
             FreeQuently Asked Question
         </h1>
-        <div class="d-flex justify-content-center">
+        <div></div>
+        <div class="d-flex justify-content-center  ">
             <div class=" container justify-content-center">
                 <div class="m-4">
-                    <div class="accordion" id="accordionPanelsStayOpenExample">
-                        <div class="accordion-item">
+                    <div class="accordion " id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item ">
                             <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
@@ -243,7 +293,7 @@
                                     <h4>Can anyone stay in a hostel?</h4>
                                 </button>
                             </h2>
-                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show "
                                 aria-labelledby="panelsStayOpen-headingOne">
                                 <div class="accordion-body" style="background-color: rgba(215, 243, 243, 0.863);">
                                     <strong> Most of the time, yes,</strong>
@@ -304,7 +354,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item">
+                        <div class="accordion-item ">
                             <h2 class="accordion-header" id="panelsStayOpen-headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
@@ -312,7 +362,7 @@
                                     <h4>Are there private rooms in Hostels?</h4>
                                 </button>
                             </h2>
-                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                            <div id="panelsStayOpen-collapseThree " class="accordion-collapse collapse col-6  col-xl-2"
                                 aria-labelledby="panelsStayOpen-headingThree">
                                 <div class="accordion-body">
                                     <strong>Yes,</strong> many, but not all, hostels have both dormitory style and
@@ -330,59 +380,69 @@
                     </div>
                 </div>
             </div>
-            <div><img src="images/faq1.png" alt=""></div>
+            <div class="d-none d-lg-block d-xl-none col-6  col-xl-2"><img src="images/faq1.png" alt=""></div>
+        </div>
+
+    </section>
+
+    <!-- Fillup Form -->
+
+    <section class="mb-3 mt-3 ms-5 row justify-content-center">
+
+        <div class=" row justify-content-center col-6 mb-4 gy-4"
+            style="color: rgb(139, 143, 139);  box-shadow: 1px 10px 5px grey;">
+            <h1 class=" row justify-content-center ">FillUp Form </h1>
+        </div>
+
+        </div>
+        <div class=" container padding fade-in d-flex justify-content-center" id="contact">
+
+            <div class="row justify-content-center col-md-10 contact-info">
+                <div class="row col-md-6 col-12 ">
+                    <div class="form-group col-md-6 name-field gy-2">
+                        <input type="text" name="name" id="contact-name" class="form-control" required="required"
+                            placeholder="Name">
+                    </div>
+                    <div class="form-group col-md-6 email-field gy-2">
+                        <input type="text" name="mobile" class="form-control" id="contact-mobile" required="required"
+                            placeholder="Mobile Number">
+                    </div>
+                    <div class="form-group col-md-12 email-field gy-2">
+                        <input type="email" name="email" class="form-control stp" id="contact-email" required="required"
+                            placeholder="Email Id">
+                    </div>
+                    <div class="form-group col-md-12 gy-2">
+                        <textarea name="message" id="message" required="required" class="form-control stpp" rows="8"
+                            placeholder="Your Text"></textarea>
+                    </div>
+                    <div class="justify-content-center gy-3">
+                        <button class="button"
+                            style="border-radius: 10px; padding-left: 25px; padding-right: 25px; background-color: antiquewhite; font-family: cursive; font-weight: 800; box-shadow: 1px 10px 5px grey;">Submit</button>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
 
     </section>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- Footer Section -->
     <section>
-        <footer class="d-flex align-items-center"
-            style="background-color: black; width: 100%; height: 200px; color: white; ">
-            <div>
+        <footer class="d-flex align-items-center "
+            style="background-color: black; width: 100%; height: 200px; color: white; border-radius: 15px 0px;">
+            <div class="gy-4 col-5 col-lg-10 mx-auto">
 
-                <p style="padding-left: 230px;"> @2020 CopyRight Claim. All researved By
-                    WIS_USA</p>
+                <p> @2020 CopyRight Claim. All researved By WIS_USA</p>
             </div>
-            <div class="col-6 align-items-end d-flex justify-content-lg-end gx-5">
+            <div class="row  col-7 col-lg-2 align-items-end gy-3">
+                <h3>Get The App</h3>
                 <a href="#"><img style="background-color: white;" src="images/ios.png" alt="Apple Store Logo"
                         width="135px" height="40px"></a>
-                <a href="#"> <img src="images/playsore.png" alt="Google Play Logo" width="135px" height="40px"></a>
+                <a class="col-7 col-lg-2" href="#"> <img src="images/playsore.png" alt="Google Play Logo" width="135px"
+                        height="40px"></a>
             </div>
             </div>
         </footer>
